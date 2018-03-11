@@ -1,0 +1,66 @@
+@mixin remCalc($fontSize) {
+    font-size: ($fontSize / 16) * 1rem;
+}
+
+html {
+    font-size: 100%; /*Default font-size is 16px*/
+}
+
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+

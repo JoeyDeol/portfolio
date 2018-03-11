@@ -1,0 +1,66 @@
+header {
+    padding-top: 30vh;
+    padding-bottom: 5vh; 
+    min-height: 100vh;
+    background-image: url(../assets/heropattern.png);
+}
+
+header nav {
+    text-transform: uppercase;
+}
+
+header h1 {
+    @include remCalc(88);
+}
+
+header button{
+    display: block;
+    margin: 0 auto;
+}
+
+.startButton {
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.startButton a{
+    display: block;
+    padding: 20px 0px;
+    background-color: #34495e;
+    border-radius: 27px;
+    border: 3px solid transparent;
+    color: white;
+    text-align: center;
+    text-transform: uppercase; 
+    transition: all 0.5s;
+    @include remCalc(14);
+    &:hover {
+        color: #34495e;
+        background-color: white;
+        border: 3px solid #34495e;
+    }
+}
+
+
+.header__heroText h1:first-child {
+    color: #e74c3c;
+}
+
+.header__heroText h1:last-child {
+    color: #1abc9c;
+}
+
+// .header__fixedNav {
+//     display: flex;
+//     justify-content: space-between;
+//     background-color: crimson;
+// }
+
+// .flex-nav {
+//     display: flex;
+//     justify-content: space-between;
+//     li {
+//         margin-left: 50px;
+//     }
+// }

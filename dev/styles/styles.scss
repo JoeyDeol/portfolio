@@ -1,0 +1,21 @@
+@import "./partials/setup";
+@import "./partials/base";
+@import "./partials/header";
+@import "./partials/skills";
+@import "./partials/_projects";
+
+
+body {
+    max-width: 1440px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    max-width: 1180px; 
+    margin: 0 auto;
+    // border: 1px solid blue;
+}
