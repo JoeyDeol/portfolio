@@ -14,6 +14,7 @@
 </head>
 <body>
 	<header>
+		<!-- <canvas id="canvas"></canvas> -->
 		<div class="wrapper">
 			<!-- <div class="header__fixedNav">
 				<div class="personal-logo">
@@ -39,10 +40,18 @@
 		</div>
 	</header>
 	<main>
-		<section id="about">
+		<section class="about__section" id="about">
 			<div class="wrapper">
-				<h2>About Me</h2>
-				<h3>Get to Know Me</h3>
+				<div class="about__section__content">
+					<div class="about__text">
+						<h2>About Me</h2>
+						<h3>Get to Know Me</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio natus repellat tempora error, nesciunt saepe suscipit eum maiores. Esse unde exercitationem blanditiis deleniti sit pariatur adipisci accusantium id illo!</p>
+					</div>
+					<div class="about__picture">
+						<img src="./public/assets/about-me-image.jpg" alt="">
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="skills__section" id="skills">
@@ -113,20 +122,23 @@
 				<a href="#">View GitHub</a>
 			</div>
 		</section>	
-		<section id="contact">
-			<h2>Contact Me</h2>
-		</section>
 	</main>
 	<footer>
-		<form action="https://formspree.io/gurjothdeol@gmail.com" method="POST">
-			<input type="text" name="name">
-			<input type="email" name="_replyto">
-			<input type="submit" value="Send">
-		</form>
-		<h5>Built By Joey Deol | Desgin By "Buhari" | &copy 2018</h5>
-		<!-- ADD A LINK TO PAM'S WEBPAGE HERE! -->
-		<h5>Headshot by Pam Lau</h5>
+		<div class="wrapper">
+			<section id="contact">
+				<h2>Contact Me</h2>
+				<form action="https://formspree.io/gurjothdeol@gmail.com" method="POST">
+					<input type="text" name="name">
+					<input type="email" name="_replyto">
+					<input type="submit" value="Send">
+				</form>
+			</section>
+			<h5>Built By Joey Deol | &copy 2018</h5>
+			<!-- ADD A LINK TO PAM'S WEBPAGE HERE! -->
+			<h5>Headshot by Pam Lau</h5>
+		</div>
 	</footer>
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>

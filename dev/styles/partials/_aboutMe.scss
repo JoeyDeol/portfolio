@@ -1,0 +1,31 @@
+.about__section {
+    padding: 6vh 0px;
+    // background-image: url(../assets/about-bg.png);
+    // background-color: #f7f7f7;
+    background-color: #34495e;
+    color: white;
+}
+
+.about__section__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__text {
+    width: 60%;
+    border: 1px solid red;
+}
+
+.about__picture {
+    // margin-left: 15%;
+    padding: 20px;
+    border-radius: 50%;
+    border: 3px solid grey;
+}
+
+.about__picture img {
+    border-radius: 50%;
+    // border: 1px solid grey;
+    width: 325px;
+    height: 325px;
+}
