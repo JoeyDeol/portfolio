@@ -8,7 +8,11 @@
 		font-family: 'Raleway', sans-serif; 
 		font-family: 'Open Sans', sans-serif; 
 	-->
+	<!-- Animations Library Below! -->
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<!-- Dev Icon Library Below! -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<!-- Custom Styles Below! -->
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,6 +22,7 @@
 		</div>
 		<nav>
 			<ul class="flex-nav" id="top-menu">
+				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#projects">Projects</a></li>
@@ -25,24 +30,20 @@
 			</ul>
 		</nav>
 	</div>	
-	<header>
+	<header id="home">
 		<!-- <canvas id="canvas"></canvas> -->
 		<div class="wrapper">
-			<div class="header__heroText">
+			<div class="header__heroText" data-aos="zoom-in-up">
 				<h1>Joey Deol.</h1>
 				<h1>Web Developer.</h1>
 			</div>
-			<div class="startButton">
-				<a href="#about">Find Out More</a>
-			</div>
-			<!-- <a href="./public/assets/test.pdf" download="">Download My Resume</a> -->
 		</div>
 	</header>
 	<main>
 		<section class="about__section" id="about">
 			<div class="wrapper">
 				<div class="about__section__content">
-					<div class="about__text">
+					<div class="about__text" data-aos="fade-down">
 						<h2>About</h2>
 						<h3>Get to Know Me</h3>
 						<div class="about__section__accentBar">
@@ -54,7 +55,7 @@
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestiae quibusdam vitae nam necessitatibus quos, minus vero reprehenderit iste voluptas possimus omnis exercitationem cupiditate, recusandae commodi architecto dolor officiis perspiciatis.</p>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ad quas maxime minus, voluptate ducimus accusamus dignissimos dolore nemo quasi repudiandae impedit itaque iusto, distinctio expedita asperiores omnis illum velit.</p>
 					</div>
-					<div class="about__picture">
+					<div class="about__picture" data-aos="fade-up">
 						<img src="./public/assets/about-me-image.jpg" alt="">
 					</div>
 				</div>
@@ -70,7 +71,7 @@
 						<img src="./public/assets/mac-decal.png" alt="A small decal of a mac computer">
 						<div class="accentBar"></div>
 					</div>
-					<ul class="skills__list">
+					<ul class="skills__list" data-aos="fade-down">
 						<li>
 							<i class="devicon-javascript-plain"></i>
 							<p>JavaScript</p>
@@ -129,7 +130,7 @@
 					<div class="accentBar"></div>
 				</div>
 				<div class="project">
-					<img src="" alt="Project Picture">
+					<img src="./public/assets/pitstop-mockup.png" alt="Project Picture">
 					<div class="project__text">
 						<div class="project__title">
 							<h3>PitStop</h3>
@@ -159,10 +160,10 @@
 							<a href="#">View GitHub</a>
 						</div>
 					</div>	
-					<img src="" alt="Project Picture">
+					<img src="./public/assets/guitarGenerator-mockup.png" alt="Project Picture">
 				</div>
 				<div class="project">
-					<img src="" alt="Project Picture">
+					<img src="./public/assets/spacexLaunchTracker-mockup.png" alt="Project Picture">
 					<div class="project__text">
 						<div class="project__title">
 							<h3>SpaceX Launch Tracker</h3>
@@ -193,10 +194,10 @@
 							<a href="#">View GitHub</a>
 						</div>
 					</div>
-					<img src="" alt="Project Picture">
+					<img src="./public/assets/overConversion-mockup.png" alt="Project Picture">
 				</div>
 				<div class="project">
-					<img src="" alt="Project Picture">
+					<img src="./public/assets/botwLoadouts-mockup.png" alt="Project Picture">
 					<div class="project__text">
 						<div class="project__title">
 							<h3>Zelda Breath of the Wild Loadouts</h3>
@@ -216,19 +217,35 @@
 		</section>	
 		<section class="contact__section" id="contact">
 			<div class="wrapper">
-				<h2>Get in Touch</h2>
-				<div class="contact__form">
+				<div class="contact__content">
+					<h2>Get In <span>Touch</span></h2>
+					<div class="contact__section__accentBar">
+						<div class="accentBar"></div>
+						<img src="./public/assets/contact-decal.png" alt="A small decal of a computer mouse">
+						<div class="accentBar"></div>
+					</div>
+					<h3>Contact Info</h3>
+					<h5>Toronto, On</h5>
+					<h5>226-448-2075</h5>
+					<a href="mailto:info@joeydeol.com">info@joeydeol.com</a>
+					<div class="contact__socialLinks">
+						<a href="https://github.com/JoeyDeol/"><i class="fab fa-github-square"></i></a>
+						<a href="https://www.linkedin.com/in/gurjoth-joey-deol/"><i class="fab fa-linkedin"></i></a>
+						<a href="https://twitter.com/Joey_Deol"><i class="fab fa-twitter-square"></i></a>
+					</div>
+				</div>
+				<!-- <div class="contact__form">
 					<form action="https://formspree.io/gurjothdeol@gmail.com" method="POST" id="contactForm">
 						<div class="contact__information">
 							<input type="text" name="name" placeholder="Full Name">
 							<input type="email" name="_replyto" placeholder="Your E-mail Address">
 						</div>
 						<div class="contact__message">
-							<textarea name="message" form="contactForm" cols="30" rows="10"></textarea>
+							<textarea name="message" form="contactForm" cols="30" rows="10" placeholder="Message"></textarea>
 						</div>
 					</form>
 					<input type="submit" value="Send Message">
-				</div>
+				</div> -->
 			</div>	
 		</section>
 	</main>
@@ -239,11 +256,17 @@
 			<h5>Headshot by Pam Lau</h5>
 		</div>
 	</footer>
+	<!-- SCRIPTS START HERE! -->
 	<!-- jQuery Below! -->
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+	<!-- Font Awesome Below! -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- Animation Library Below! -->
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	<!-- SmoothScroll Below! -->
-	<!-- <script src='/public/script/smooth-scroll.js'></script> -->
+
 	<!-- Custom Scripts Below! -->
 	<script src="/public/scripts/app.js"></script>
+	<!-- SCRIPTS END HERE! -->
 </body>
 </html>

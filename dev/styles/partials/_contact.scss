@@ -1,29 +1,70 @@
 .contact__section {
+    padding: 10vh 0px;
     background-color: #34495e;
+    text-align: center;
     color: white;
-    form {
-        display: flex;
+    h2 {
+        @include remCalc(50);
     }
-    input {
-        display: block;
+    span {
+        color: #e74c3c;
+    }
+    h3  {
+        text-transform: uppercase;
+    }
+    h5 {
+        margin: 20px 0px;
     }
 }
 
-.contact__form {
+.contact__section__accentBar {
     display: flex;
-    input {
-        width: 300px;
+    margin: 20px auto;
+    width: 250px;
+    height: 22px;
+    .accentBar {
+        width: 100px;
+        height: 3px;
+        margin: 8px 8px;
+        border-top: 0.5px solid white;
+        border-bottom: 0.5px solid white;
     }
-    input[type="submit"] {
-        height: 30px;
+    img {
+        width: 22px;
     }
 }
 
-.contact__message {
-    width: 540px;
-    margin: 0px 20px;
-    border: 1px solid red; 
-    textarea {
-        width: 100%;
+.contact__socialLinks {
+    @include remCalc(50);
+    a {
+        color: white;
+        transition: all 0.5 ease-out;
+        &:hover, &:focus {
+            color: #e74c3c;
+        }    
+    }
+    .fa-github-square, .fa-linkedin, .fa-twitter-square {
+        transition: all 0.5s ease-out;
+        &:hover, &:focus {
+            transform: scale(1.2);
+        }
     }
 }
+
+// .contact__form {
+//     display: flex;
+//     input {
+//         width: 300px;
+//     }
+//     input[type="submit"] {
+//         height: 30px;
+//     }
+// }
+
+// .contact__message {
+//     width: 540px;
+//     margin: 0px 20px;
+//     textarea {
+//         width: 100%;
+//     }
+// }

@@ -61,6 +61,9 @@ portfolio.bannerScroll = function () {
 
 portfolio.init = function() {
     // portfolio.smoothScroll();
+    AOS.init({
+        disable: 'mobile'
+    });
     portfolio.bannerScroll();
 };
 
