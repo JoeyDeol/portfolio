@@ -1,0 +1,29 @@
+.contact__section {
+    background-color: #34495e;
+    color: white;
+    form {
+        display: flex;
+    }
+    input {
+        display: block;
+    }
+}
+
+.contact__form {
+    display: flex;
+    input {
+        width: 300px;
+    }
+    input[type="submit"] {
+        height: 30px;
+    }
+}
+
+.contact__message {
+    width: 540px;
+    margin: 0px 20px;
+    border: 1px solid red; 
+    textarea {
+        width: 100%;
+    }
+}

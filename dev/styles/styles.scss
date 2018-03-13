@@ -1,14 +1,15 @@
 @import "./partials/setup";
 @import "./partials/base";
-@import "./partials/_bannerCanvas.scss";
+@import "./partials/bannerCanvas.scss";
 @import "./partials/header";
-@import "./partials/_aboutMe";
+@import "./partials/aboutMe";
 @import "./partials/skills";
-@import "./partials/_projects";
+@import "./partials/projects";
+@import "./partials/contact";
 
 
 body {
-    max-width: 1440px;
+    max-width: 1920px;
     font-family: 'Open Sans', sans-serif;
 }
 

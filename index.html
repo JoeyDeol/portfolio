@@ -13,22 +13,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<div class="header__fixedNav">
+		<div class="personal-logo">
+		</div>
+		<nav>
+			<ul class="flex-nav" id="top-menu">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>	
 	<header>
 		<!-- <canvas id="canvas"></canvas> -->
 		<div class="wrapper">
-			<!-- <div class="header__fixedNav">
-				<div class="personal-logo">
-					
-				</div>
-				<nav>
-					<ul class="flex-nav">
-						<li><a href="#about">About</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</div> -->
 			<div class="header__heroText">
 				<h1>Joey Deol.</h1>
 				<h1>Web Developer.</h1>
@@ -44,9 +43,16 @@
 			<div class="wrapper">
 				<div class="about__section__content">
 					<div class="about__text">
-						<h2>About Me</h2>
+						<h2>About</h2>
 						<h3>Get to Know Me</h3>
+						<div class="about__section__accentBar">
+							<div class="accentBar"></div>
+							<img src="./public/assets/aboutArrow.png" alt="A small decal of a mac computer">
+							<div class="accentBar"></div>
+						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus optio natus repellat tempora error, nesciunt saepe suscipit eum maiores. Esse unde exercitationem blanditiis deleniti sit pariatur adipisci accusantium id illo!</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestiae quibusdam vitae nam necessitatibus quos, minus vero reprehenderit iste voluptas possimus omnis exercitationem cupiditate, recusandae commodi architecto dolor officiis perspiciatis.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ad quas maxime minus, voluptate ducimus accusamus dignissimos dolore nemo quasi repudiandae impedit itaque iusto, distinctio expedita asperiores omnis illum velit.</p>
 					</div>
 					<div class="about__picture">
 						<img src="./public/assets/about-me-image.jpg" alt="">
@@ -57,7 +63,7 @@
 		<section class="skills__section" id="skills">
 			<div class="wrapper">
 				<div class="skills__content">
-					<h4>What I Bring to the Table</h4>
+					<h3>What I Bring to the Table</h3>
 					<h2>Skills</h2>
 					<div class="skills__section__accentBar">
 						<div class="accentBar"></div>
@@ -65,17 +71,49 @@
 						<div class="accentBar"></div>
 					</div>
 					<ul class="skills__list">
-						<li><i class="devicon-javascript-plain"></i></li>
-						<li><i class="devicon-jquery-plain-wordmark"></i></li>	
-						<li><i class="devicon-react-original-wordmark"></i></li>	
-						<li><i class="devicon-html5-plain-wordmark"></i></li>
-						<li><i class="devicon-css3-plain-wordmark"></i></li>
-						<li><i class="devicon-github-plain-wordmark"></i></li>
-						<li><i class="devicon-git-plain-wordmark"></i></li>
-						<li><i class="devicon-sass-original"></i></li>
-						<li><i class="devicon-gulp-plain"></i></li>
-						<li><i class="devicon-nodejs-plain"></i></li>
-						<!-- <li><i class="devicon-visualstudio-plain"></i></li> -->
+						<li>
+							<i class="devicon-javascript-plain"></i>
+							<p>JavaScript</p>
+						</li>
+						<li>
+							<i class="devicon-jquery-plain"></i>
+							<p>jQuery</p>
+						</li>	
+						<li>
+							<i class="devicon-react-original"></i>
+							<p>React</p>
+						</li>	
+						<li>
+							<i class="devicon-html5-plain"></i>
+							<p>HTML5</p>
+						</li>
+						<li>
+							<i class="devicon-css3-plain"></i>
+							<p>CSS3</p>
+						</li>
+						<li>
+							<i class="devicon-github-plain"></i>
+							<p>GitHub</p>
+						</li>
+						<li>
+							<i class="devicon-git-plain"></i>
+							<p>Git</p>
+						</li>
+						<li>
+							<i class="devicon-sass-original"></i>
+							<p>Sass</p>
+						</li>
+						<li>
+							<i class="devicon-gulp-plain"></i>
+							<p>Gulp</p>
+						</li>
+						<!-- <li>
+							<i class="devicon-nodejs-plain"></i>
+						</li> -->
+						<li>
+							<i class="devicon-visualstudio-plain"></i>
+							<p>Visual Studio Code</p>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -84,61 +122,128 @@
 		<section class="projects__section" id="projects">
 			<div class="wrapper">
 				<h2>My Work</h2>
-				<h4>A Couple Highlights of What I've Built</h4>
+				<h3>Highlights of What I've Built</h3>
 				<div class="projects__section__accentBar">
 					<div class="accentBar"></div>
 					<img src="./public/assets/mouse-decal.png" alt="A small decal of a computer mouse">
 					<div class="accentBar"></div>
 				</div>
-				<h3>PitStop</h3>
-				<h4>Built With: HTMl, Scss, JavaScript, jQuery, and various Google Maps APIs</h4>
-				<img src="" alt="Project Picture">
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
-				<a href="#">View Live</a>
-				<a href="#">View GitHub</a>				
-				<h3>Guitar Generator</h3>
-				<h4>Built With: HTML, Scss, JavaScript, and jQuery</h4>
-				<img src="" alt="Project Picture">
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
-				<a href="#">View Live</a>
-				<a href="#">View GitHub</a>				
-				<h3>SpaceX Launch Tracker</h3>
-				<h4>Built With: React, Scss, SpaceX and Google Maps APIs</h4>
-				<img src="" alt="Project Picture">
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
-				<a href="#">View Live</a>
-				<a href="#">View GitHub</a>
-				<h3>Zelda BOTW LoadOuts</h3>
-				<h4>Built With: React, Scss, and Firebase</h4>
-				<img src="" alt="Project Picture">
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
-				<a href="#">View Live</a>
-				<a href="#">View GitHub</a>
-				<h3>Over</h3>
-				<h4>Built With: HTML, Scss</h4>
-				<img src="" alt="Project Picture">
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
-				<a href="#">View Live</a>
-				<a href="#">View GitHub</a>
+				<div class="project">
+					<img src="" alt="Project Picture">
+					<div class="project__text">
+						<div class="project__title">
+							<h3>PitStop</h3>
+							<h4>HTMl - Sass - JavaScript - jQuery - Google Maps APIs</h4>
+						</div>
+						<div class="project__description">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
+						</div>
+						<div class="project__links">
+							<a href="#">View Live</a>
+							<a href="#">View GitHub</a>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<div class="project__text">
+						<div class="project__title">
+							<h3>Guitar Generator</h3>
+							<h4>HTMl - Sass - JavaScript - jQuery</h4>
+						</div>
+						<div class="project__description">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio
+								eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
+						</div>
+						<div class="project__links">
+							<a href="#">View Live</a>
+							<a href="#">View GitHub</a>
+						</div>
+					</div>	
+					<img src="" alt="Project Picture">
+				</div>
+				<div class="project">
+					<img src="" alt="Project Picture">
+					<div class="project__text">
+						<div class="project__title">
+							<h3>SpaceX Launch Tracker</h3>
+							<h4>React - Sass - SpaceX & Google Maps APIs</h4>
+						</div>
+						<div class="project__description">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio
+								eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
+						</div>
+						<div class="project__links">
+							<a href="#">View Live</a>
+							<a href="#">View GitHub</a>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<div class="project__text">
+						<div class="project__title">
+							<h3>Over</h3>
+							<h4>HTMl - Sass</h4>
+						</div>
+						<div class="project__description">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio
+								eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
+						</div>
+						<div class="project__links">
+							<a href="#">View Live</a>
+							<a href="#">View GitHub</a>
+						</div>
+					</div>
+					<img src="" alt="Project Picture">
+				</div>
+				<div class="project">
+					<img src="" alt="Project Picture">
+					<div class="project__text">
+						<div class="project__title">
+							<h3>Zelda Breath of the Wild Loadouts</h3>
+							<h4>React - Sass - Firebase</h4>
+						</div>
+						<div class="project__description">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem accusantium temporibus ipsam rerum maiores distinctio
+								eligendi, veritatis libero voluptatem nulla earum est dolorum. Unde, ratione. Ut accusamus porro esse a.</p>
+						</div>
+						<div class="project__links">
+							<a href="#">View Live</a>
+							<a href="#">View GitHub</a>
+						</div>
+					</div>
+				</div>			
 			</div>
 		</section>	
+		<section class="contact__section" id="contact">
+			<div class="wrapper">
+				<h2>Get in Touch</h2>
+				<div class="contact__form">
+					<form action="https://formspree.io/gurjothdeol@gmail.com" method="POST" id="contactForm">
+						<div class="contact__information">
+							<input type="text" name="name" placeholder="Full Name">
+							<input type="email" name="_replyto" placeholder="Your E-mail Address">
+						</div>
+						<div class="contact__message">
+							<textarea name="message" form="contactForm" cols="30" rows="10"></textarea>
+						</div>
+					</form>
+					<input type="submit" value="Send Message">
+				</div>
+			</div>	
+		</section>
 	</main>
 	<footer>
 		<div class="wrapper">
-			<section id="contact">
-				<h2>Contact Me</h2>
-				<form action="https://formspree.io/gurjothdeol@gmail.com" method="POST">
-					<input type="text" name="name">
-					<input type="email" name="_replyto">
-					<input type="submit" value="Send">
-				</form>
-			</section>
 			<h5>Built By Joey Deol | &copy 2018</h5>
 			<!-- ADD A LINK TO PAM'S WEBPAGE HERE! -->
 			<h5>Headshot by Pam Lau</h5>
 		</div>
 	</footer>
+	<!-- jQuery Below! -->
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+	<!-- SmoothScroll Below! -->
+	<!-- <script src='/public/script/smooth-scroll.js'></script> -->
+	<!-- Custom Scripts Below! -->
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>
