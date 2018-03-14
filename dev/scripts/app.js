@@ -59,12 +59,23 @@ portfolio.bannerScroll = function () {
     });
 }
 
+portfolio.hamburger = function() {
+    $(".hamburger-menu").on("click", function () {
+        console.log('clicked');
+        // $(".page-nav .page-nav-menu").toggleClass("open");
+    });
+    $(".page-nav .page-nav-menu a").on("click", function () {
+        $(".page-nav .page-nav-menu").toggleClass("open");
+    });
+}
+
 portfolio.init = function() {
     // portfolio.smoothScroll();
     AOS.init({
         disable: 'mobile'
     });
     portfolio.bannerScroll();
+    portfolio.hamburger();
 };
 
 $(function() {

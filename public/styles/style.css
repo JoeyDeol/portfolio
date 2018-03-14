@@ -217,9 +217,14 @@ header button {
   padding: 25px 6%;
   background-color: white; }
 
+.personal-logo h3 {
+  color: #34495e;
+  padding: 4px;
+  border-left: 3px solid #e74c3c;
+  border-bottom: 3px solid #e74c3c; }
+
 .flex-nav {
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
   .flex-nav li {
     font-family: 'Raleway', sans-serif;
     margin-left: 20px;
@@ -234,9 +239,28 @@ header button {
       color: #e74c3c;
       border-bottom: 3px solid #34495e; }
 
+.hamburger-menu {
+  display: none;
+  color: #e74c3c;
+  font-size: 1.5625rem; }
+
 #top-menu li.active a {
   color: #e74c3c;
   border-bottom: 3px solid #34495e; }
+
+@media (max-width: 744px) {
+  header h1 {
+    font-size: 3.75rem; } }
+
+@media (max-width: 650px) {
+  .flex-nav {
+    display: none; }
+  .hamburger-menu {
+    display: inline-block; } }
+
+@media (max-width: 328px) {
+  header h1 {
+    font-size: 3.125rem; } }
 
 .about__section {
   padding: 10vh 0px;
@@ -289,6 +313,19 @@ header button {
   width: 325px;
   height: 325px;
   box-shadow: inset 0 0 0 3px white; }
+
+.about__socialLinks {
+  font-size: 2.125rem; }
+  .about__socialLinks a {
+    color: white;
+    margin: 0px 5px;
+    transition: all 0.5 ease-out; }
+    .about__socialLinks a:hover, .about__socialLinks a:focus {
+      color: #e74c3c; }
+  .about__socialLinks .fa-github-square, .about__socialLinks .fa-linkedin, .about__socialLinks .fa-twitter-square {
+    transition: all 0.25s ease-out; }
+    .about__socialLinks .fa-github-square:hover, .about__socialLinks .fa-github-square:focus, .about__socialLinks .fa-linkedin:hover, .about__socialLinks .fa-linkedin:focus, .about__socialLinks .fa-twitter-square:hover, .about__socialLinks .fa-twitter-square:focus {
+      transform: scale(1.2); }
 
 @media (max-width: 882px) {
   .about__section__content {
@@ -410,7 +447,7 @@ header button {
   .project .project__links a {
     display: inline-block;
     margin-right: 20px;
-    padding: 20px 40px;
+    padding: 15px 30px;
     background-color: #34495e;
     border-radius: 50px;
     color: white;
@@ -498,14 +535,15 @@ header button {
     width: 22px; }
 
 .contact__socialLinks {
-  font-size: 3.125rem; }
+  font-size: 2.125rem; }
   .contact__socialLinks a {
     color: white;
+    margin: 0px 5px;
     transition: all 0.5 ease-out; }
     .contact__socialLinks a:hover, .contact__socialLinks a:focus {
       color: #e74c3c; }
   .contact__socialLinks .fa-github-square, .contact__socialLinks .fa-linkedin, .contact__socialLinks .fa-twitter-square {
-    transition: all 0.5s ease-out; }
+    transition: all 0.25s ease-out; }
     .contact__socialLinks .fa-github-square:hover, .contact__socialLinks .fa-github-square:focus, .contact__socialLinks .fa-linkedin:hover, .contact__socialLinks .fa-linkedin:focus, .contact__socialLinks .fa-twitter-square:hover, .contact__socialLinks .fa-twitter-square:focus {
       transform: scale(1.2); }
 
@@ -529,4 +567,4 @@ h1, h2, h3, h4, h5 {
 .wrapper {
   max-width: 1180px;
   margin: 0 auto;
-  width: 95%; }
+  width: 90%; }

@@ -37,9 +37,16 @@ header button{
     background-color: white;
 }
 
+.personal-logo h3 {
+    color: #34495e;
+    padding: 4px;
+    border-left: 3px solid #e74c3c;
+    border-bottom: 3px solid #e74c3c;
+}
+
 .flex-nav {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     li {
         font-family: 'Raleway', sans-serif;
         margin-left: 20px;
@@ -58,7 +65,34 @@ header button{
     }
 }
 
+.hamburger-menu {
+    display: none;
+    color: #e74c3c;
+    @include remCalc(25);
+}
+
 #top-menu li.active a {
     color: #e74c3c;
     border-bottom: 3px solid #34495e;
+}
+
+@media (max-width: 744px) {
+    header h1 {
+        @include remCalc(60);
+    }
+}
+
+@media (max-width: 650px) {
+    .flex-nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 328px) {
+    header h1 {
+        @include remCalc(50);
+    }
 }
