@@ -290,7 +290,7 @@ header button {
   .about__text p {
     line-height: 28px;
     margin-bottom: 15px;
-    text-align: justify; }
+    text-align: left; }
 
 .about__section__accentBar {
   display: flex;
