@@ -222,6 +222,8 @@ header button {
   padding: 4px;
   border-left: 3px solid #e74c3c;
   border-bottom: 3px solid #e74c3c; }
+  .personal-logo h3 a {
+    color: #34495e; }
 
 .flex-nav {
   display: flex; }
@@ -239,11 +241,6 @@ header button {
       color: #e74c3c;
       border-bottom: 3px solid #34495e; }
 
-.hamburger-menu {
-  display: none;
-  color: #e74c3c;
-  font-size: 1.5625rem; }
-
 #top-menu li.active a {
   color: #e74c3c;
   border-bottom: 3px solid #34495e; }
@@ -253,10 +250,24 @@ header button {
     font-size: 3.75rem; } }
 
 @media (max-width: 650px) {
-  .flex-nav {
-    display: none; }
-  .hamburger-menu {
-    display: inline-block; } }
+  .flex-nav li {
+    margin: 0 auto; } }
+
+@media (max-width: 459px) {
+  .personal-logo h3 {
+    font-size: 1rem; }
+  .flex-nav li {
+    font-size: 0.75rem; } }
+
+@media (max-width: 375px) {
+  .personal-logo h3 {
+    font-size: 0.75rem; } }
+
+@media (max-width: 340px) {
+  .personal-logo h3 {
+    font-size: 0.625rem; }
+  .flex-nav li {
+    font-size: 0.625rem; } }
 
 @media (max-width: 328px) {
   header h1 {

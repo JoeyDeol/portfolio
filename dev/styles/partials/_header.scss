@@ -38,6 +38,9 @@ header button{
 }
 
 .personal-logo h3 {
+    a {
+        color: #34495e;
+    }
     color: #34495e;
     padding: 4px;
     border-left: 3px solid #e74c3c;
@@ -46,7 +49,6 @@ header button{
 
 .flex-nav {
     display: flex;
-    // justify-content: space-between;
     li {
         font-family: 'Raleway', sans-serif;
         margin-left: 20px;
@@ -65,12 +67,6 @@ header button{
     }
 }
 
-.hamburger-menu {
-    display: none;
-    color: #e74c3c;
-    @include remCalc(25);
-}
-
 #top-menu li.active a {
     color: #e74c3c;
     border-bottom: 3px solid #34495e;
@@ -84,11 +80,38 @@ header button{
 
 @media (max-width: 650px) {
     .flex-nav {
-        display: none;
+        li {
+            margin: 0 auto;
+        }
     }
-    .hamburger-menu {
-        display: inline-block;
+}
+
+@media (max-width: 459px) {
+    .personal-logo h3 {
+        @include remCalc(16);
     }
+    .flex-nav {
+        li {
+            @include remCalc(12);
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .personal-logo h3 {
+        @include remCalc(12);
+    }
+}
+
+@media (max-width: 340px) {
+    .personal-logo h3 {
+        @include remCalc(10);
+    } 
+    .flex-nav {
+        li {
+            @include remCalc(10);
+        }
+    }       
 }
 
 @media (max-width: 328px) {
