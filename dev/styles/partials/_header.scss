@@ -92,26 +92,16 @@ header button{
     }
     .flex-nav {
         li {
+            margin: 0px;
             @include remCalc(12);
         }
     }
 }
 
 @media (max-width: 375px) {
-    .personal-logo h3 {
-        @include remCalc(12);
+    .flex-nav a {
+        padding: 0px;
     }
-}
-
-@media (max-width: 340px) {
-    .personal-logo h3 {
-        @include remCalc(10);
-    } 
-    .flex-nav {
-        li {
-            @include remCalc(10);
-        }
-    }       
 }
 
 @media (max-width: 328px) {

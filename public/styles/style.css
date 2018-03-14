@@ -257,17 +257,12 @@ header button {
   .personal-logo h3 {
     font-size: 1rem; }
   .flex-nav li {
+    margin: 0px;
     font-size: 0.75rem; } }
 
 @media (max-width: 375px) {
-  .personal-logo h3 {
-    font-size: 0.75rem; } }
-
-@media (max-width: 340px) {
-  .personal-logo h3 {
-    font-size: 0.625rem; }
-  .flex-nav li {
-    font-size: 0.625rem; } }
+  .flex-nav a {
+    padding: 0px; } }
 
 @media (max-width: 328px) {
   header h1 {
@@ -504,6 +499,11 @@ header button {
 @media (max-width: 354px) {
   .project .project__links a {
     margin: 10px; } }
+
+@media (max-width: 326px) {
+  .project img {
+    width: 300px;
+    height: 180px; } }
 
 .contact__section {
   padding: 10vh 0px;
