@@ -8,6 +8,7 @@
     }
     h3 {
         text-transform: uppercase;
+        @include remCalc(20);
     }
 }
 
@@ -31,8 +32,7 @@
 .project { 
     display: flex;
     text-align: left;
-    margin: 50px 0px;
-    border: 1px solid red;
+    margin: 150px 0px;
     h3 {
         margin: 20px 0px;
     }
@@ -41,6 +41,29 @@
     }
     p {
         margin: 20px 0px;
+        line-height: 35px;
+    }
+    img {
+        width: 50%;
+        height: 343px;
+    }
+    .project__text {
+        width: 50%;
+    }
+    .project__links a{
+        display: inline-block;
+        margin-right: 20px;
+        padding: 20px 40px;
+        background-color: #34495e;
+        border-radius: 50px;
+        color: white; 
+        border: 3px solid transparent;
+        transition: all 0.5s ease-out;
+        &:hover, &:focus {
+            background-color: white;
+            color: #34495e;
+            border: 3px solid #34495e;
+        }
     }
 }
 
@@ -48,4 +71,53 @@
     background-color: #fd5f42; 
     width: 140px;
     height: 140px;
+}
+
+.textLeft {
+    order: 1;
+}
+
+.project__imageRight {
+    order: 2;
+}
+
+@media (max-width: 939px) {
+.project {
+    flex-direction: column;
+    text-align: center;
+    .project__text{
+        width: 100%;
+    }
+    img {
+        width: 650px;
+        margin: 0 auto;
+    }
+    .project__links a {
+        margin: 0 auto
+    }
+}
+    .textLeft {
+        order: 2;
+    }
+
+    .project__imageRight {
+        order: 1;
+    }
+}
+
+@media (max-width: 669px) {
+    .project {
+        img {
+            width: 310px;
+            height: 180px;
+        }
+    }
+}
+
+@media (max-width: 354px) {
+    .project {
+        .project__links a {
+            margin: 10px;
+        }
+    }
 }

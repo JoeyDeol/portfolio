@@ -9,6 +9,7 @@
     h3 {
         text-transform: uppercase;
         margin-bottom: 10px;
+        @include remCalc(20);
     }
 }
 
@@ -56,4 +57,26 @@
   border-right: 700px solid transparent;
   
   border-top: 78px solid #e74c3c;
+}
+
+@media (max-width: 1439px) {
+    .section__curtain {
+        display: none;
+    }
+}
+
+@media (max-width: 699px) {
+    .skills__list {
+        li {
+            width: 33%;
+        }
+    }
+}
+
+@media (max-width: 549px) {
+    .skills__list {
+        li {
+            width: 50%;
+        }
+    }
 }

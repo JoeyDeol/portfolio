@@ -11,9 +11,23 @@
     }
     h3  {
         text-transform: uppercase;
+        @include remCalc(20);
     }
     h5 {
         margin: 20px 0px;
+        @include remCalc(16);
+    }
+    .email {
+        display: inline-block;
+        padding-bottom: 5px;
+        color: white;
+        border-bottom: 3px solid transparent;
+        @include remCalc(16);
+        transition: all 0.5s ease-out;
+        &:hover, &:focus {
+            color: #e74c3c;
+            border-bottom: 3px solid #e74c3c;
+        }
     }
 }
 

@@ -54,7 +54,6 @@ header button{
         &:hover, &:focus, &:active  {
             color: #e74c3c;
             border-bottom: 3px solid #34495e;
-            // border-right: 3px solid #34495e;
         }
     }
 }
@@ -62,5 +61,4 @@ header button{
 #top-menu li.active a {
     color: #e74c3c;
     border-bottom: 3px solid #34495e;
-    // border-right: 3px solid #34495e;
 }

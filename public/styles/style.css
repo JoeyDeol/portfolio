@@ -248,13 +248,15 @@ header button {
 
 .about__text {
   width: 60%;
-  text-align: center; }
+  text-align: center;
+  order: 1; }
   .about__text h2 {
     margin-bottom: 10px;
     font-size: 3.125rem; }
   .about__text h3 {
     margin-bottom: 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.25rem; }
   .about__text p {
     line-height: 28px;
     margin-bottom: 15px;
@@ -278,7 +280,8 @@ header button {
   margin-top: 60px;
   margin-left: 10%;
   height: 100%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  order: 2; }
 
 .about__picture img {
   border-radius: 50%;
@@ -286,6 +289,21 @@ header button {
   width: 325px;
   height: 325px;
   box-shadow: inset 0 0 0 3px white; }
+
+@media (max-width: 882px) {
+  .about__section__content {
+    flex-direction: column;
+    align-items: center; }
+  .about__text {
+    width: 100%; }
+  .about__picture {
+    order: 0;
+    margin: 20px 0px; } }
+
+@media (max-width: 369px) {
+  .about__picture img {
+    width: 300px;
+    height: 300px; } }
 
 .skills__section {
   background-color: #e74c3c;
@@ -296,7 +314,8 @@ header button {
     font-size: 3.125rem; }
   .skills__section h3 {
     text-transform: uppercase;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 1.25rem; }
 
 .skills__section__accentBar {
   display: flex;
@@ -335,6 +354,18 @@ header button {
   border-right: 700px solid transparent;
   border-top: 78px solid #e74c3c; }
 
+@media (max-width: 1439px) {
+  .section__curtain {
+    display: none; } }
+
+@media (max-width: 699px) {
+  .skills__list li {
+    width: 33%; } }
+
+@media (max-width: 549px) {
+  .skills__list li {
+    width: 50%; } }
+
 .projects__section {
   padding: 10vh 0px;
   text-align: center; }
@@ -343,7 +374,8 @@ header button {
     color: #e74c3c;
     font-size: 3.125rem; }
   .projects__section h3 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.25rem; }
 
 .projects__section__accentBar {
   display: flex;
@@ -362,19 +394,68 @@ header button {
 .project {
   display: flex;
   text-align: left;
-  margin: 50px 0px;
-  border: 1px solid red; }
+  margin: 150px 0px; }
   .project h3 {
     margin: 20px 0px; }
   .project h4 {
     margin: 20px 0px; }
   .project p {
-    margin: 20px 0px; }
+    margin: 20px 0px;
+    line-height: 35px; }
+  .project img {
+    width: 50%;
+    height: 343px; }
+  .project .project__text {
+    width: 50%; }
+  .project .project__links a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px 40px;
+    background-color: #34495e;
+    border-radius: 50px;
+    color: white;
+    border: 3px solid transparent;
+    transition: all 0.5s ease-out; }
+    .project .project__links a:hover, .project .project__links a:focus {
+      background-color: white;
+      color: #34495e;
+      border: 3px solid #34495e; }
 
 .project__decal {
   background-color: #fd5f42;
   width: 140px;
   height: 140px; }
+
+.textLeft {
+  order: 1; }
+
+.project__imageRight {
+  order: 2; }
+
+@media (max-width: 939px) {
+  .project {
+    flex-direction: column;
+    text-align: center; }
+    .project .project__text {
+      width: 100%; }
+    .project img {
+      width: 650px;
+      margin: 0 auto; }
+    .project .project__links a {
+      margin: 0 auto; }
+  .textLeft {
+    order: 2; }
+  .project__imageRight {
+    order: 1; } }
+
+@media (max-width: 669px) {
+  .project img {
+    width: 310px;
+    height: 180px; } }
+
+@media (max-width: 354px) {
+  .project .project__links a {
+    margin: 10px; } }
 
 .contact__section {
   padding: 10vh 0px;
@@ -386,9 +467,21 @@ header button {
   .contact__section span {
     color: #e74c3c; }
   .contact__section h3 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.25rem; }
   .contact__section h5 {
-    margin: 20px 0px; }
+    margin: 20px 0px;
+    font-size: 1rem; }
+  .contact__section .email {
+    display: inline-block;
+    padding-bottom: 5px;
+    color: white;
+    border-bottom: 3px solid transparent;
+    font-size: 1rem;
+    transition: all 0.5s ease-out; }
+    .contact__section .email:hover, .contact__section .email:focus {
+      color: #e74c3c;
+      border-bottom: 3px solid #e74c3c; }
 
 .contact__section__accentBar {
   display: flex;
@@ -435,4 +528,5 @@ h1, h2, h3, h4, h5 {
 
 .wrapper {
   max-width: 1180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 95%; }
